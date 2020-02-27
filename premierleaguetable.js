@@ -27,8 +27,7 @@ http.get(options, function (res) {
         http.createServer(function (request, response) {
             response.writeHead(200, { "Content-Type": "text/html" });
             response.write(
-                `<meta charset="utf-8"/>
-                <style>
+                `<style>
                 table {border-collapse: collapse;}
                 tr {
                 border: 2px solid black;
@@ -45,6 +44,8 @@ http.get(options, function (res) {
               </style>
             <table>
             <tr>
+                <th>#</th>
+                <th>Joukkue</th>
                 <th title = "Ottelut">OTT</th>
                 <th title = "Voitot">V</th>
                 <th title = "Tasapelit">T</th>
