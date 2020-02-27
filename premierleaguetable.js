@@ -27,7 +27,8 @@ http.get(options, function (res) {
         http.createServer(function (request, response) {
             response.writeHead(200, { "Content-Type": "text/html" });
             response.write(
-                `<style>
+                `<meta charset="utf-8"/> 
+                <style>
                 table {border-collapse: collapse;}
                 tr {
                 border: 2px solid black;
